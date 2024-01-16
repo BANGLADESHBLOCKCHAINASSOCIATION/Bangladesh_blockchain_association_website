@@ -2,15 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-.banner-container {
-	background-image: url('../../public//banner.png');
-	background-repeat: no-repeat;
-}
-
 .primary-btn {
 	background: #58bf77;
 	color: white;
 	padding: 12px 56px;
 	width: fit-content;
 	border-radius: 8px;
+}
+
+.gradiantBg {
+	background-image: linear-gradient(#2ce452, #80d2d9);
+}
+
+.sectionTitle {
+	text-align: center;
+	font-weight: 600;
+	font-size: 1.5rem;
+	line-height: 2rem;
 }

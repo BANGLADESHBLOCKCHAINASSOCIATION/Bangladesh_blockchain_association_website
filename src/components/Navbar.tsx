@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Navbar() {
 	return (
-		<div className="bg-white w-full flex items-center justify-between py-3 px-10 fixed top-0 border-b">
+		<div className="bg-white w-full flex items-center justify-between py-3 px-10 fixed top-0 border-b z-20">
 			<div>
 				<Image src={Logo} height={70} width={170} alt="Bangladesh Blockchain Association" />
 			</div>

@@ -1,12 +1,16 @@
+import coverImage from '@/../public/banner.jpg';
+import Image from 'next/image';
+
 export default function Banner() {
 	return (
-		<div className="flex flex-col justify-center gap-5 -mx-28 px-28 min-h-[75vh] banner-container">
-			<p className="whitespace-pre-line text-3xl font-bold leading-10">{'Empowering The Bangladeshi \nBlockchain Ecosystem'}</p>
-			<p className="max-w-[65%]">
+		<div className="flex flex-col justify-center gap-5 -mx-28 px-28 py min-h-[600px] max-h-[75vh] relative bg-black text-white">
+			<Image className="absolute inset-0 object-cover opacity-50 w-full h-full" src={coverImage} height={600} width={1000} alt="Bangladesh urban photo" />
+			<p className="whitespace-pre-line text-3xl font-bold leading-10 z-10">{'Empowering The Bangladeshi \nBlockchain Ecosystem'}</p>
+			<p className="max-w-[65%] z-10">
 				We combine, synchronize and leverage blockchain-related activities of European corporations, startups, venture capitalists, and scientific institutes. We serve as a superior, neutral body to
 				aggregate and coordinate blockchain activities throughout Europe and to provide Non-European parties access into the European blockchain ecosystem.
 			</p>
-			<div className="primary-btn">View Engagements</div>
+			<div className="primary-btn z-10">View Engagements</div>
 		</div>
 	);
 }

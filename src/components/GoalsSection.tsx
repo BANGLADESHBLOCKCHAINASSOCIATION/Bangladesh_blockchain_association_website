@@ -40,8 +40,8 @@ export default function GoalsSection() {
 		},
 	];
 	return (
-		<div>
-			<p className="text-center text-2xl font-semibold my-16">Our Goals</p>
+		<div className="py-14">
+			<p className="sectionTitle mb-16">Our Goals</p>
 
 			<div className="flex gap-10">
 				<div className="w-1/2 border rounded-md overflow-hidden">
