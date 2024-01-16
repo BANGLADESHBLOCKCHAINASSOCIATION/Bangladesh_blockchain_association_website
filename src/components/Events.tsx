@@ -27,7 +27,7 @@ export default function Events() {
 	return (
 		<div className="my-16">
 			<p className="sectionTitle mb-16">Events</p>
-			<div className="flex items-center justify-center gap-10">
+			<div className="flex flex-col lg:flex-row items-center justify-center gap-10">
 				{events.map((event) => (
 					<div key={event.title}>
 						<Image className="w-full" src={event.imgae} height={190} width={344} alt={event.title + ' Banner'} />

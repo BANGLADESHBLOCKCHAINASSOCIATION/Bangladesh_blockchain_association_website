@@ -44,10 +44,10 @@ export default function GoalsSection() {
 			<p className="sectionTitle mb-16">Our Goals</p>
 
 			<div className="flex gap-10">
-				<div className="w-1/2 border rounded-md overflow-hidden">
+				<div className="w-full lg:w-1/2 border rounded-md overflow-hidden">
 					{goals.map((goal, index) => (
-						<div onClick={() => setGoalIndex(index)} key={goal.title} className="border-b last:border-b-0 flex items-center justify-between p-8 hover:bg-[#8ad29f] cursor-pointer">
-							<div className="flex gap-20">
+						<div onClick={() => setGoalIndex(index)} key={goal.title} className="border-b last:border-b-0 flex items-center justify-between p-8 hover:bg-[#8ad29f] cursor-pointer gap-5">
+							<div className="flex gap-5 lg:gap-20">
 								<span>{index + 1}</span>
 								<p className="font-semibold">{goal.title}</p>
 							</div>
@@ -58,7 +58,7 @@ export default function GoalsSection() {
 					))}
 				</div>
 
-				<div className="w-1/2 flex flex-col justify-center gap-5 p-14 border rounded-md h-fit">
+				<div className="w-1/2 hidden lg:flex flex-col justify-center gap-5 p-14 border rounded-md h-fit">
 					<div className="px-5 py-6 h-28 w-28 border border-[#58BF77] rounded-full">
 						<Image className="w-full h-full object-cover" src={goals[goalIndex].icon} height={80} width={80} alt={goals[goalIndex].title + ' icon'} />
 					</div>
