@@ -1,0 +1,32 @@
+[
+	{
+		"icon": "/icons/graduation-cap.png",
+		"title": "Blockchain Advocacy",
+		"desc": "Promoting the adoption and understanding of blockchain technology across various sectors."
+	},
+	{
+		"icon": "/icons/graduation-cap.png",
+		"title": "Regulatory Compliance",
+		"desc": "Ensuring alignment with local policies and regulations governing blockchain and cryptocurrencies."
+	},
+	{
+		"icon": "/icons/graduation-cap.png",
+		"title": "Legal Education Initiatives",
+		"desc": "Providing training on local laws related to blockchain and collaborating with bank authorities for comprehensive understanding."
+	},
+	{
+		"icon": "/icons/graduation-cap.png",
+		"title": "Tech Competitions",
+		"desc": "Organizing Olympiads and Hackathons to foster innovation and skill development in the blockchain space."
+	},
+	{
+		"icon": "/icons/graduation-cap.png",
+		"title": "Certification Programs",
+		"desc": "Offering professional training programs and certifications to enhance expertise in blockchain technologies."
+	},
+	{
+		"icon": "/icons/graduation-cap.png",
+		"title": "Employment Hub",
+		"desc": "Connecting individuals with job opportunities in the blockchain industry, bridging the gap between talent and demand."
+	}
+]

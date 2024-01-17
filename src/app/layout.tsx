@@ -18,8 +18,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<header>
 					<Navbar />
 				</header>
-				<div className="mt-[52px] lg:mt-[80px]">{children}</div>
-				<footer>
+				<div className="mt-[52px] lg:mt-[80px] min-h-screen">{children}</div>
+				<footer className="relative bottom-0 w-full">
 					<Footer />
 				</footer>
 			</body>
