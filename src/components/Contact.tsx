@@ -1,3 +1,5 @@
+'use client';
+
 import { env } from '@/config/config';
 import emailjs from '@emailjs/browser';
 import { TextField } from '@mui/material';

@@ -6,14 +6,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
+import { MotionDiv } from './MotionDiv';
 
 const NavOptions = [
 	{ title: 'Home', link: '/' },
-	{ title: 'Engagements', link: '/' },
-	{ title: 'Events', link: '/' },
-	{ title: 'News', link: '/' },
-	{ title: 'About', link: '/' },
-	{ title: 'Contact', link: '/' },
+	{ title: 'Engagements', link: '/engagement' },
+	{ title: 'Events', link: '/events' },
+	{ title: 'News', link: '/news' },
+	{ title: 'About', link: '/about' },
+	{ title: 'Contact', link: '/contact' },
 ];
 
 export default function Navbar() {
@@ -27,8 +28,22 @@ export default function Navbar() {
 		setAnchorEl(null);
 	};
 
+	const variant = {
+		hidden: { opacity: 0 },
+		visible: { opacity: 1 },
+	};
+
 	return (
-		<div className="bg-white w-full flex items-center justify-between py-3 lg:px-10 px-5 fixed top-0 border-b z-20">
+		<MotionDiv
+			variants={variant}
+			initial="hidden"
+			animate="visible"
+			transition={{
+				duration: 0.7,
+				delay: 0.2,
+				ease: 'easeInOut',
+			}}
+			className="bg-white w-full flex items-center justify-between py-3 lg:px-10 px-5 fixed top-0 border-b z-20">
 			<Link href={'/'}>
 				<Image src={Logo} className="w-[80px] lg:w-auto" height={70} width={170} alt="Bangladesh Blockchain Association" />
 			</Link>
@@ -41,7 +56,7 @@ export default function Navbar() {
 				))}
 			</div>
 			<IconButton
-				className="lg:hidden"
+				className="lg:!hidden"
 				onClick={handleClick}
 				size="small"
 				sx={{ ml: 2 }}
@@ -93,6 +108,6 @@ export default function Navbar() {
 					</MenuItem>
 				))}
 			</Menu>
-		</div>
+		</MotionDiv>
 	);
 }
