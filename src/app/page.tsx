@@ -1,23 +1,29 @@
 import Banner from '@/components/Banner';
 import Events from '@/components/Events';
 import GoalsSection from '@/components/GoalsSection';
+import { MotionDiv } from '@/components/MotionDiv';
 
 export default function Home() {
 	return (
-		<main className="px-10 lg:px-28">
+		<main className="px-10 lg:px-28 overflow-hidden">
 			<Banner />
 			<GoalsSection />
 
-			<div className="gradiantBg my-10 flex flex-col justify-center py-20 -mx-10 lg:-mx-28">
-				<p className="text-center italic font-serif text-xl px-10 lg:px-0 lg:max-w-[40%] mx-auto">
-					“Designed as a Decentralized Semi-Autonomous Organization (DSAO), the EBA incorporates the genuine concept of collaboration and cooperation of members in a distributed network. That makes
-					EBA a fully transparent and resilient representative of the European blockchain community.”
-				</p>
+			<MotionDiv
+				initial={{ x: '100%' }}
+				whileInView={{ x: 0 }}
+				viewport={{ once: true }}
+				transition={{ duration: 0.5, delay: 0.3, ease: 'easeInOut', delayChildren: 0.8 }}
+				className="gradiantBg my-10 flex flex-col justify-center py-20 -mx-10 lg:-mx-28">
+				<MotionDiv className="text-center italic font-serif text-xl px-10 lg:px-0 lg:max-w-[40%] mx-auto">
+					“Designed as a Decentralized Semi-Autonomous Organization (DSAO), the BBA incorporates the genuine concept of collaboration and cooperation of members in a distributed network. That makes
+					BBA a fully transparent and resilient representative of the European blockchain community.”
+				</MotionDiv>
 				<div className="mt-6">
-					<p className="text-center font-semibold text-lg">Dr. Michael Gebert</p>
-					<p className="text-center mt-1">EBA Chairman</p>
+					<p className="text-center font-semibold text-lg">Mr. Belal Abdullah Anas</p>
+					<p className="text-center mt-1">BBA Chairman</p>
 				</div>
-			</div>
+			</MotionDiv>
 
 			<Events />
 

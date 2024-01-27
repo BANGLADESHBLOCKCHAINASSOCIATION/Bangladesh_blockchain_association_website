@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { IoPersonOutline } from 'react-icons/io5';
+import { MotionDiv } from './MotionDiv';
 
 export default function Events() {
 	const events = [
@@ -25,22 +26,26 @@ export default function Events() {
 	];
 
 	return (
-		<div className="my-16">
+		<MotionDiv initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.3 }} className="my-16">
 			<p className="sectionTitle mb-16">Events</p>
 			<div className="flex flex-col lg:flex-row items-center justify-center gap-10">
-				{events.map((event) => (
-					<div key={event.title}>
-						<Image className="w-full" src={event.imgae} height={190} width={344} alt={event.title + ' Banner'} />
-						<div className="flex flex-col gap-3 mt-4">
-							<p className="font-semibold">{event.title}</p>
-							<p className="text-sm flex items-center gap-3">
-								<IoPersonOutline /> {event.organizer}
-							</p>
-							<p className="text-sm">{event.description}</p>
-						</div>
+				<div className="w-1/3 border rounded-lg p-5">
+					<Image
+						className="w-full h-60 object-cover"
+						src="https://img.freepik.com/free-vector/flat-coming-soon-background-with-megaphone_1017-33737.jpg?w=1060&t=st=1706384959~exp=1706385559~hmac=d383d03a5d50bfa38267125eb93eb39845ce04eb9ece9d2a7f5c8a1e5cd86544"
+						height={190}
+						width={344}
+						alt={'Event Banner'}
+					/>
+					<div className="flex flex-col gap-3 mt-4">
+						<p className="font-semibold">Exciting Events coming soon!</p>
+						<p className="text-sm flex items-center gap-3">
+							<IoPersonOutline /> Bangladesh Blockchain Association
+						</p>
+						<p className="text-xs">Stay tuned for exciting new events from around the globe. We will show updated info on BBA official website</p>
 					</div>
-				))}
+				</div>
 			</div>
-		</div>
+		</MotionDiv>
 	);
 }
