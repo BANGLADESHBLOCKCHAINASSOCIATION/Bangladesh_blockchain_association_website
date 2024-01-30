@@ -45,12 +45,12 @@ export default function Navbar() {
 			}}
 			className="bg-white w-full flex items-center justify-between py-3 lg:px-10 px-5 fixed top-0 border-b z-20">
 			<Link href={'/'}>
-				<Image src={Logo} className="w-[80px] lg:w-auto" height={70} width={170} alt="Bangladesh Blockchain Association" />
+				<Image src={Logo} className="w-[80px] lg:h-[55px] lg:w-auto" height={70} width={170} alt="Bangladesh Blockchain Association" />
 			</Link>
 
 			<div className="lg:flex gap-8 hidden">
 				{NavOptions.map((option) => (
-					<Link className="text-black" key={option.title} href={option.link}>
+					<Link className="text-black text-sm hover:underline" key={option.title} href={option.link}>
 						{option.title}
 					</Link>
 				))}
@@ -101,10 +101,8 @@ export default function Navbar() {
 				transformOrigin={{ horizontal: 'right', vertical: 'top' }}
 				anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}>
 				{NavOptions.map((option) => (
-					<MenuItem key={option.title} onClick={handleClose}>
-						<Link className="text-black text-sm px-5 py-2" href={option.link}>
-							{option.title}
-						</Link>
+					<MenuItem key={option.title} className="text-black text-sm px-5 py-2" onClick={handleClose}>
+						<Link href={option.link}>{option.title}</Link>
 					</MenuItem>
 				))}
 			</Menu>

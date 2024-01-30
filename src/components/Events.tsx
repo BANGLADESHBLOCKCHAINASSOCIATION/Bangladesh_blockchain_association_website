@@ -29,7 +29,7 @@ export default function Events() {
 		<MotionDiv initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.3 }} className="my-16">
 			<p className="sectionTitle mb-16">Events</p>
 			<div className="flex flex-col lg:flex-row items-center justify-center gap-10">
-				<div className="w-1/3 border rounded-lg p-5">
+				<div className="max-w-80 xl:w-1/3 border rounded-lg p-5">
 					<Image
 						className="w-full h-60 object-cover"
 						src="https://img.freepik.com/free-vector/flat-coming-soon-background-with-megaphone_1017-33737.jpg?w=1060&t=st=1706384959~exp=1706385559~hmac=d383d03a5d50bfa38267125eb93eb39845ce04eb9ece9d2a7f5c8a1e5cd86544"

@@ -14,7 +14,7 @@ export default function Footer() {
 					</div>
 				</div>
 				<div>
-					<p className="font-semibold text-sm lg:text-base">Navigate</p>
+					<p className="font-semibold text-xs lg:text-base">Navigate</p>
 					<ul className="text-xs lg:text-sm leading-6 mt-2">
 						<li>Home</li>
 						<li>Engagements</li>
@@ -25,25 +25,15 @@ export default function Footer() {
 					</ul>
 				</div>
 				<div>
-					<p className="font-semibold text-sm lg:text-base">About</p>
+					<p className="font-semibold text-xs lg:text-base">About</p>
 					<ul className="text-xs lg:text-sm leading-6 mt-2">
-						<li>Home</li>
-						<li>Engagements</li>
-						<li>Membership</li>
-						<li>About</li>
-						<li>Contact</li>
-						<li>News</li>
+						<li>About us</li>
 					</ul>
 				</div>
 				<div>
-					<p className="font-semibold text-sm lg:text-base">Contact</p>
+					<p className="font-semibold text-xs lg:text-base">Contact</p>
 					<ul className="text-xs lg:text-sm leading-6 mt-2">
-						<li>Home</li>
-						<li>Engagements</li>
-						<li>Membership</li>
-						<li>About</li>
-						<li>Contact</li>
-						<li>News</li>
+						<li>Contact us</li>
 					</ul>
 				</div>
 			</div>
