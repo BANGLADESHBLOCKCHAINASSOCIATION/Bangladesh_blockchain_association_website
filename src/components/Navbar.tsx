@@ -4,6 +4,7 @@ import Logo from '@/../public/logo.png';
 import { IconButton, Menu, MenuItem } from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { MotionDiv } from './MotionDiv';
@@ -20,6 +21,8 @@ const NavOptions = [
 export default function Navbar() {
 	const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 	const open = Boolean(anchorEl);
+
+	const pathname = usePathname();
 
 	const handleClick = (event: React.MouseEvent<HTMLElement>) => {
 		setAnchorEl(event.currentTarget);
@@ -50,7 +53,7 @@ export default function Navbar() {
 
 			<div className="lg:flex gap-8 hidden">
 				{NavOptions.map((option) => (
-					<Link className="text-black text-sm hover:underline" key={option.title} href={option.link}>
+					<Link className={`${pathname === option.link ? 'text-primary' : 'text-black'} text-sm font-semibold hover:underline`} key={option.title} href={option.link}>
 						{option.title}
 					</Link>
 				))}
