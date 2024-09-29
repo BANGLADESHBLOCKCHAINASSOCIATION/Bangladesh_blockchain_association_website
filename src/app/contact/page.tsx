@@ -52,7 +52,7 @@ export default function Contact() {
 										Board
 									</Typography>
 									<Typography sx={{ fontSize: 14, whiteSpace: 'pre' }} color="text.secondary" gutterBottom>
-										Belal Abdullah Anas (Chairman)
+										Fazlur Rahman (Chairman)
 									</Typography>
 									<Typography sx={{ fontSize: 14, whiteSpace: 'pre', textWrap: 'wrap' }} color="text.secondary" gutterBottom>
 										Md Zahid Hasan Patwary (Chief Technology Officer)

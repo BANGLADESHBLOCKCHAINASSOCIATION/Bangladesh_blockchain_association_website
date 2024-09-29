@@ -20,10 +20,10 @@ export default function Home() {
 				className="gradiantBg my-10 flex flex-col justify-center py-20 -mx-10 lg:-mx-28">
 				<MotionDiv className="text-center italic font-serif lg:text-xl px-10 lg:px-0 lg:max-w-[40%] mx-auto">
 					“Designed as a Decentralized Semi-Autonomous Organization (DSAO), the BBA incorporates the genuine concept of collaboration and cooperation of members in a distributed network. That makes
-					BBA a fully transparent and resilient representative of the European blockchain community.”
+					BBA a fully transparent and resilient representative of the Bangladesh blockchain community.”
 				</MotionDiv>
 				<div className="mt-6">
-					<p className="text-center font-semibold text-sm lg:text-lg">Mr. Belal Abdullah Anas</p>
+					<p className="text-center font-semibold text-sm lg:text-lg">Fazlur Rahman</p>
 					<p className="text-center text-sm mt-1">BBA Chairman</p>
 				</div>
 			</MotionDiv>

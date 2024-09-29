@@ -5,8 +5,8 @@ import { FaSquareXTwitter } from 'react-icons/fa6';
 const iconProps = { size: 25, className: 'text-[#58BF77]' };
 
 const links = [
-	{ title: 'LinkedIn', icon: <FaLinkedin {...iconProps} />, link: '' },
-	{ title: 'Twitter', icon: <FaSquareXTwitter {...iconProps} />, link: '' },
+	{ title: 'LinkedIn', icon: <FaLinkedin {...iconProps} />, link: 'https://www.linkedin.com/company/bangladesh-blockchain-association/' },
+	{ title: 'Twitter', icon: <FaSquareXTwitter {...iconProps} />, link: 'https://x.com/BDBlockchainAsn' },
 	// { title: 'Telegram', icon: <FaTelegram {...iconProps} />, link: '' },
 ];
 
