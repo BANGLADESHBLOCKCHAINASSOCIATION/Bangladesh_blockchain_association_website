@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { FaLinkedin, FaTelegram } from 'react-icons/fa';
 import { FaSquareXTwitter } from 'react-icons/fa6';
 
@@ -6,7 +7,13 @@ const iconProps = { size: 25, className: 'text-[#58BF77]' };
 const links = [
 	{ title: 'LinkedIn', icon: <FaLinkedin {...iconProps} />, link: '' },
 	{ title: 'Twitter', icon: <FaSquareXTwitter {...iconProps} />, link: '' },
-	{ title: 'Telegram', icon: <FaTelegram {...iconProps} />, link: '' },
+	// { title: 'Telegram', icon: <FaTelegram {...iconProps} />, link: '' },
+];
+
+const navigateList = [
+	{ title: 'Home', link: '/' },
+	{ title: 'Membership', link: '/membership' },
+	{ title: 'Contact', link: '/contact' },
 ];
 
 export default function Footer() {
@@ -27,24 +34,27 @@ export default function Footer() {
 				<div>
 					<p className="font-semibold text-xs lg:text-base">Navigate</p>
 					<ul className="text-xs lg:text-sm leading-6 mt-2">
-						<li>Home</li>
-						<li>Engagements</li>
-						<li>Membership</li>
-						<li>About</li>
-						<li>Contact</li>
-						<li>News</li>
+						{navigateList.map((nav) => (
+							<li key={nav.link}>
+								<Link href={nav.link}>{nav.title}</Link>
+							</li>
+						))}
 					</ul>
 				</div>
 				<div>
 					<p className="font-semibold text-xs lg:text-base">About</p>
 					<ul className="text-xs lg:text-sm leading-6 mt-2">
-						<li>About us</li>
+						<Link href="/about">
+							<li>About us</li>
+						</Link>
 					</ul>
 				</div>
 				<div>
 					<p className="font-semibold text-xs lg:text-base">Contact</p>
 					<ul className="text-xs lg:text-sm leading-6 mt-2">
-						<li>Contact us</li>
+						<Link href="/contact">
+							<li>Contact us</li>
+						</Link>
 					</ul>
 				</div>
 			</div>

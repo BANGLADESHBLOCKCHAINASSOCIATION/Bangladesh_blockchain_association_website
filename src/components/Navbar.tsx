@@ -11,9 +11,10 @@ import { MotionDiv } from './MotionDiv';
 
 const NavOptions = [
 	{ title: 'Home', link: '/' },
-	{ title: 'Engagements', link: '/engagement' },
-	{ title: 'Events', link: '/events' },
-	{ title: 'News', link: '/news' },
+	{ title: 'Membership', link: '/membership' },
+	// { title: 'Engagements', link: '/engagement' },
+	// { title: 'Events', link: '/events' },
+	// { title: 'News', link: '/news' },
 	{ title: 'About', link: '/about' },
 	{ title: 'Contact', link: '/contact' },
 ];

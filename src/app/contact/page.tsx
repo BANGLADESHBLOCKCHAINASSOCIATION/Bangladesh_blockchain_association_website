@@ -30,11 +30,11 @@ export default function Contact() {
 				<p className="text-4xl text-center font-bold my-auto text-white">Contact Us</p>
 			</div>
 			<div>
-				<Card className="shadow-lg" sx={{ minHeight: '50vh', maxWidth: '75%', margin: '-60px auto 60px auto', border: 'none' }}>
-					<CardContent sx={{ padding: '4rem' }}>
+				<Card className="shadow-lg" sx={{ minHeight: '50vh', maxWidth: { xs: '90%', xl: '75%' }, margin: '-60px auto 60px auto', border: 'none' }}>
+					<CardContent sx={{ padding: { xs: '2rem', xl: '4rem' } }}>
 						<Grid container spacing={2}>
 							{addresses.map((address) => (
-								<Grid item key={address.title} xs={6}>
+								<Grid item key={address.title} xs={12} md={6}>
 									<Container className="mb-5">
 										<Typography sx={{ fontSize: 14 }} fontWeight={600} gutterBottom>
 											{address.title}
@@ -45,7 +45,7 @@ export default function Contact() {
 									</Container>
 								</Grid>
 							))}
-							<Grid item xs={6}>
+							<Grid item xs={12} md={6}>
 								<Container className="mb-5">
 									<Typography sx={{ fontSize: 14 }} fontWeight={600} gutterBottom>
 										Board
@@ -53,15 +53,15 @@ export default function Contact() {
 									<Typography sx={{ fontSize: 14, whiteSpace: 'pre' }} color="text.secondary" gutterBottom>
 										Belal Abdullah Anas (Chairman)
 									</Typography>
-									<Typography sx={{ fontSize: 14, whiteSpace: 'pre' }} color="text.secondary" gutterBottom>
-										Zunayed Ahmed Palak (Co-Chairman)
+									<Typography sx={{ fontSize: 14, whiteSpace: 'pre', textWrap: 'wrap' }} color="text.secondary" gutterBottom>
+										Md Zahid Hasan Patwary (Chief Technology Officer)
 									</Typography>
 								</Container>
 							</Grid>
 						</Grid>
 						<Grid className="py-5" container justifyContent={'center'} spacing={2}>
 							{contactItems.map((item) => (
-								<Grid key={item.title} item xs={6}>
+								<Grid key={item.title} item xs={12} md={6}>
 									<Container className="py-5">
 										<div className="flex items-center gap-2">
 											{item.icon}

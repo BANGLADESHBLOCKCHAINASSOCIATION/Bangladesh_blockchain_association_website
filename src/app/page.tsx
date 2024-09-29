@@ -1,6 +1,7 @@
 import Banner from '@/components/Banner';
 import Events from '@/components/Events';
 import GoalsSection from '@/components/GoalsSection';
+import Membership from '@/components/Membership';
 import { MotionDiv } from '@/components/MotionDiv';
 
 export default function Home() {
@@ -8,6 +9,8 @@ export default function Home() {
 		<main className="px-10 lg:px-28 overflow-hidden">
 			<Banner />
 			<GoalsSection />
+
+			<Membership />
 
 			<MotionDiv
 				initial={{ x: '100%' }}
@@ -25,7 +28,7 @@ export default function Home() {
 				</div>
 			</MotionDiv>
 
-			<Events />
+			{/* <Events /> */}
 
 			{/* <MotionDiv variants={variant} initial="hidden" whileInView={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.6, ease: 'easeInOut' }} viewport={{ once: true }}>
 				<Contact />
