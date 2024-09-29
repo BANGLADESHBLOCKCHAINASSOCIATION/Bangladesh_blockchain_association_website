@@ -1,3 +1,4 @@
+'use client';
 import Membership from '@/components/Membership';
 import React from 'react';
 

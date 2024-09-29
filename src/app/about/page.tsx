@@ -1,6 +1,7 @@
+'use client';
 import { Typography, Box, List, ListItem, ListItemText, Divider } from '@mui/material';
 
-const AboutBBA = () => {
+const page = () => {
 	return (
 		<Box sx={{ padding: '24px' }}>
 			{/* Main Title */}
@@ -113,4 +114,4 @@ const AboutBBA = () => {
 	);
 };
 
-export default AboutBBA;
+export default page;
